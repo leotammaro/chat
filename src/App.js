@@ -9,21 +9,20 @@ import Loading from './views/Loading';
 
 function App() {
   const [user,setUser] = useState({});
-  const [loading,setLoading] = useState(true)
+  const [loading,setLoading] = useState(true);
 
   useEffect(() => {
     firebase.auth().onAuthStateChanged(function(user) {
-     setUser(user)
-     setLoading(false)
+     setUser(user);
+     setLoading(false);
     });
-  },[])
+  },[]);
 
   return (
     <div className="App">
       <userContext.Provider value={user}>
-        {loading ? <Loading></Loading> : 
+        {loading ? <Loading/> : 
             user ? <Home user={user}/> : <Login/>}
-        
       </userContext.Provider>
     </div>
   );
