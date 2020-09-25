@@ -1,0 +1,92 @@
+.home-container{
+    height: 95vh;
+    width: 80%;
+    display: flex;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 3px rgba(#000000,0.1);
+
+    .left-container{
+        height: 100%;
+        width: 30%;
+        border-right: 1px #e3e2e2 solid;
+
+        .navbar-user{
+            height: 60px;
+            width: 100%;
+            background-color: #F4F4F5;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px #e3e2e2 solid;
+            box-sizing: border-box;
+
+            .user-img{
+                height: 70%;
+                width: auto;
+                border-radius: 50%;
+                margin-left: 15px;
+            }
+
+            .log-out{
+                height: 50%;
+                width: auto;
+                border-radius: 50%;
+                margin-right: 15px;
+                opacity: 0.6;
+                cursor: pointer;
+
+                &:hover{
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+
+    .chat-container{
+        width: 70%;
+        height: 100%;
+
+        .navbar-chat{
+            height: 60px;
+            width: 100%;
+            background-color: #F4F4F5;
+            border-bottom: 1px #e3e2e2 solid ;
+            box-sizing: border-box;
+        }
+
+        .chat{
+            height: calc(100% - 120px);
+            width: 100%;
+            background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+        }
+
+        .message-container{
+            display: flex;
+            height: 60px;
+            align-items: center;
+            
+            .emotes{
+                width: 30px;
+                height: auto;
+                opacity: 0.6;
+            }
+
+            .message{
+                flex: 1;
+                margin: 0px 10px;
+                border: none;
+                height: 80%;
+                border-radius: 20px;
+                background-color: #fff;
+            }
+
+            .send-message{
+                width: 30px;
+                height: 50%;;
+                border: none;
+               background-color: #fff;
+            }
+        } 
+    }
+}
