@@ -46,6 +46,8 @@
     .chat-container{
         width: 70%;
         height: 100%;
+        border-bottom: 5px #49E589 solid;
+        box-sizing: border-box;
 
         .navbar-chat{
             height: 60px;
