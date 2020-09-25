@@ -1,0 +1,19 @@
+.login-container{
+    height: 20vh;
+    width: 20%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 5px rgba(#000000, 0.1);
+
+    .login-button{
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color:  #009688;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-weight: 500;
+    }
+}
