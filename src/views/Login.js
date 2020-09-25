@@ -8,11 +8,10 @@ function Login() {
     return (
         <div className="login-container">
             <button className="login-button" onClick={()=>{
-               firebase.auth().signInWithRedirect(provider);
-                  
+               firebase.auth().signInWithRedirect(provider);     
             }}>Login With Google</button>
         </div>
-    )
+    );
 }
 
-export default Login
+export default Login;
